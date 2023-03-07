@@ -16,7 +16,8 @@
     "baseUrl": ".",
     "paths": {
       "@fj-retail/api-interfaces": ["libs/api-interfaces/src/index.ts"],
-      "@fj-retail/core-data": ["libs/core-data/src/index.ts"]
+      "@fj-retail/core-data": ["libs/core-data/src/index.ts"],
+      "@fj-retail/core-state": ["libs/core-state/src/index.ts"]
     }
   },
   "exclude": ["node_modules", "tmp"]

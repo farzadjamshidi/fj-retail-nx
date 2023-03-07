@@ -1,3 +1,4 @@
-export function apiInterfaces(): string {
-  return 'api-interfaces';
+export interface Message
+{
+  message: string;
 }

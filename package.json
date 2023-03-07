@@ -2,7 +2,11 @@
   "name": "fj-retail",
   "version": "0.0.0",
   "license": "MIT",
-  "scripts": {},
+  "scripts": {
+    "serve:api": "npx nx serve api",
+    "serve:web": "npx nx serve retail --open",
+    "serve:all": "concurrently \"npm run serve:api\" \"npm run serve:web\""
+  },
   "private": true,
   "dependencies": {
     "@angular/animations": "~15.2.0",
@@ -50,6 +54,7 @@
     "@types/node": "~18.7.1",
     "@typescript-eslint/eslint-plugin": "^5.36.1",
     "@typescript-eslint/parser": "^5.36.1",
+    "concurrently": "^7.6.0",
     "cypress": "^12.2.0",
     "eslint": "~8.15.0",
     "eslint-config-prettier": "8.1.0",
